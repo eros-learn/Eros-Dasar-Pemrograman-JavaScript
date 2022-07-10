@@ -1,31 +1,14 @@
-/**
- * TODO:
- * 1. Buatlah variabel currency yang merupakan Map dengan kriteria:
- *   - key "USD", value 14000
- *   - key "JPY", value 131
- *   - key "SGD", value 11000
- *   - key "MYR", value 3500
- * 2. Buatlah variabel priceInIDR yang bernilai dari hasil perkalian:
- *     - priceInJPY dengan nilai currency JPY
- */
+const user = {
+    firstName: "Luke",
+    lastName: "Skywalker",
+    age: 19,
+    isJedi: true,
+};
 
-const priceInJPY = 5000;
+console.log(`Halo, nama saya ${user.firstName} ${user.lastName}`);
+console.log(`Umur saya ${user.age} tahun`);
 
-// TODO
-
-const currency = new Map([
-    ["USD", 14000],
-    ["JPY", 131],
-    ["SGD", 11000],
-    ["MYR", 3500]
-]);
-
-const priceInIDR = priceInJPY * currency.get("JPY");
-
-console.log(currency)
-console.log(priceInIDR)
-
-/**
- * Jangan hapus kode di bawah ini
- */
-module.exports = { currency, priceInJPY, priceInIDR };
+/* output
+Halo, nama saya Luke Skywalker
+Umur saya 19 tahun
+*/
